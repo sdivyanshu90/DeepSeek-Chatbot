@@ -137,7 +137,7 @@ The chatbot will:
 
 You can customize multiple parts of the chatbot easily:
 
-### 🔤 Prompt Template (rag_query.py)
+### 🔤 Prompt Template (query.py)
 
 Change this to adjust the chatbot’s behavior:
 
@@ -155,7 +155,7 @@ Answer the question based on the above context in a brief: {question}
 
 ### 🤖 Change LLM Model
 
-In `rag_query.py`, change the model to any LLM available via Ollama:
+In `query.py`, change the model to any LLM available via Ollama:
 
 ```python
 model = Ollama(model="deepseek-r1:1.5b")  # You can try "llama3", "mistral", etc.
@@ -176,7 +176,7 @@ Make sure to pull the model with `ollama pull <model>` first.
 If you want to clear all indexed documents:
 
 ```bash
-python src/load_docs.py --reset
+python src/docs.py --reset
 ```
 
 ---
