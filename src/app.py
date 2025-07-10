@@ -36,7 +36,7 @@ def generate_response(user_input):
     greeting_keywords = ["hello", "hi", "hey", "hola"]
 
     if any(greet in user_input.lower() for greet in greeting_keywords):
-        return "👋 Hello there! I'm your gprMax assistant — ready to help you understand electromagnetic simulations, signals, or anything else you throw at me. Ask away! ⚡️"
+        return "👋 Hello there! I'm your DeepSeek RAG Q&A assistant — ready to help you understand electromagnetic simulations, signals, or anything else you throw at me. Ask away! ⚡️"
     
     return query_rag(user_input)
 
