@@ -36,8 +36,13 @@ def generate_response(user_input):
     greeting_keywords = ["hello", "hi", "hey", "hola"]
 
     if any(greet in user_input.lower() for greet in greeting_keywords):
-        return "👋 Hello there! I'm your DeepSeek RAG Q&A assistant — ready to help you understand electromagnetic simulations, signals, or anything else you throw at me. Ask away! ⚡️"
-    
+        return (
+            "🌟 Hello and welcome to the DeepSeek Chatbot!\n\n"
+            "I'm your AI-powered assistant built on Retrieval-Augmented Generation (RAG), here to help you navigate knowledge with ease.\n"
+            "📚 Just drop in your question — whether it's from uploaded documents or your own curiosity — and I'll dig deep to get you a smart, grounded answer.\n\n"
+            "Ask me anything to get started! 🚀"
+        )
+
     return query_rag(user_input)
 
 # Store LLM generated responses
